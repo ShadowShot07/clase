@@ -1,0 +1,22 @@
+# Practica .htaccess
+
+DirectoryIndex portada.html
+
+
+
+RewriteEngine On
+
+RewriteRule "buscador.html" "http://www.google.com"
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(.+\.)?192.169.13.59\.com/.*$ [NC]
+
+
+RewriteRule \.(png)$ http://192.169.13.59/miblog/images/madge.png [F]
+
+RewriteEngine On
+ErrorDocument 404 /miblog/errores/404.html
+ErrorDocument 403 /miblog/errores/403.html
+ErrorDocument 500 /miblog/errores/500.html
+
+

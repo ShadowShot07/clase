@@ -1,0 +1,3 @@
+<FilesMatch "^(prohibido)">
+   Deny from all
+</FilesMatch>
