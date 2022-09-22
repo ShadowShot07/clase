@@ -1,3 +1,9 @@
-<FilesMatch "^(prohibido)">
-   Deny from all
-</FilesMatch>
+# Htaccess comentario
+
+DirectoryIndex index.html
+
+
+
+ErrorDocument 404 /DPL/errores/404.html
+ErrorDocument 403 /DPL/errores/403.html
+ErrorDocument 500 /DPL/errores/500.html
